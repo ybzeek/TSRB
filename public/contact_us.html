@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/contact.css" class="stylsheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.css">
+        <title>The Sim Redmond Band</title>
+    </head>
+<body>
+    <div class="nav_wrapper">  
+        <nav>
+            <div class="logo">
+                <a href="/index.html"><img class="logo" src="/Images/srblogo.png" alt="logo" ></a>
+            </div>
+            <ul class="nav__links">
+                <li class="nav_li">
+                    <a href="/events.html">Event Calendar</a>
+                </li>
+                <li class="nav_li">
+                    <a href="/about_us.html">About Us</a>
+                </li>
+                <li class="nav_li">
+                    <a href="/merchandise.html">Merch Store</a>
+                </li>
+                <li class="nav_li">
+                    <a href="/band_photos.html">Band Photos</a>
+                </li>
+                <li class="nav_li">
+                    <a href="/press.html">Press Reviews</a>
+                </li>
+                <li class="nav_li">
+                    <a href="/contact_us.html">Contact Us!</a>
+                </li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </div>
+    <div class="text_above">
+        <h1>Feel free to send us an email.<br> Just fill out the form below and We will get back with you soon!
+        </h1>
+    </div>
+    <section class="form__container">
+        <div class="container">
+            <div class="booking_container">
+                <h3 class="booking_info">For booking information you can call between the hours of:<br> 9am-6pm.<br>Monday - Saturday</h3>
+                <h3 class="number">607-273-5152</h3>
+                <h3 class="email">simredmondband8@gmail.com</h3>
+            </div>
+            <form class="form">
+                <div class="form-group">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Jane Doe..." tabindex="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Jane_Doe99@gmail.com" tabindex="2" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Hello king" tabindex="3" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="form-label">Your message here...</label>
+                    <textarea name="message" id="message" cols="50" rows="5" placeholder="Enter Message..." tabindex="4" class="form-control"></textarea>
+                </div>
+                <div>
+                    <button class="btn-submit" type="submit" tabindex="5">Send Message!</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <div class="credit">
+        Photo by <a href="https://unsplash.com/@itscakefortea?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">David Griffiths</a> on <a href="https://unsplash.com/s/photos/nature-background?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    </div>
+    <div id="jAlRem" class="is-hidden">
+        <div id="jAlert">
+            <table id="jAlert_table">
+                <tr id="jAlert_tr">
+                    <td id="jAlert_td">  <p id="jAlert_content"></p>  </td>
+                    <td id="jAlert_td">  <button id='jAlert_ok'  onclick="jAlertagree()"></button>  </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        function jAlertagree(){
+            var parent = document.getElementById('jAlRem');
+            var child = document.getElementById('jAlert');
+            parent.removeChild(child);
+            document.body.style.backgroundColor="white";
+            document.body.style.cursor="pointer";
+        }
+    </script>
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- index javascript reference -->
+    <script src="../js/contact.js"></script>
+    <script src="../js/nav.js"></script>
+    <!-- font awesome for icons -->
+    <script src="https://kit.fontawesome.com/e2a99332de.js" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

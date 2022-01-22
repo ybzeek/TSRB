@@ -1,0 +1,158 @@
+<main class="homepagelanding">
+        <div class="landing-container">
+            <div class="landing-slider">
+                <div class="slider-one">
+                    <div>
+                        <img src="/Images/Band photo.jpg" class="img-fluid" alt="Banner 1">
+                    </div>
+                    <div>
+                        <img src="/Images/SRBSilhouettes (1).jpg" class="img-fluid" alt="Banner 2">
+                    </div>
+                    <div>
+                        <img src="/Images/SRB BLM.jpg" class="img-fluid" alt="Banner 3">
+                    </div>
+                </div>
+                <div class="slider-btn">
+                    <span class="prev-btn position-top"><i class="fas fa-chevron-left"></i></span>
+                    <span class="next-btn position-top right-0"><i class="fas fa-chevron-right"></i></span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+        <!-- main js -->
+        <script src="/js/main.js"></script>
+
+
+
+<!-- fontawesome -->
+<script src="https://kit.fontawesome.com/e2a99332de.js" crossorigin="anonymous"></script>
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- slick javascript -->
+
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+
+
+
+
+
+// slick homepage landing
+
+$('.slider-one')
+    .not('.slick-initialize')
+    .slick({
+    autoplay: true,
+    autoplaySpeed: 3000,
+    dots: true,
+    prevArrow: ".landing-slider .slider-btn .prev-btn",
+    nextArrow: ".landing-slider .slider-btn .next-btn",
+});   
+
+
+Homepage landing carousel
+
+.slick-track {
+    display: flex !important;
+}
+
+.slick-slide {
+    height: 500px !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.homepagelanding {
+    background: none;
+    margin-top: 150px;
+}
+
+.landing-container {
+    padding: 5rem;
+}
+
+.landing-slider {
+    position: relative;
+}
+
+.landing-slider .slider-btn .prev-btn,
+.landing-slider .slider-btn .next-btn {
+    background-color: #0E67B4;
+    padding: 1rem 1.5rem;
+    border-radius: 50%;
+    color: white;
+    margin: 0 1rem;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.landing-slider:hover .slider-btn .prev-btn,
+.landing-slider:hover .slider-btn .next-btn {
+    opacity: 0.5;
+} 
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem 0;
+    list-style-type: none;
+    position: absolute;
+    bottom: 0;
+    right: 45%;
+}
+
+.slick-dots li {
+    margin: 0 0.6rem;
+}
+
+.slick-dots button {
+    display: block;
+    width: .5rem;
+    height: 0.5rem;
+    padding: 0;
+    border: none;
+    background-color: white;
+    text-indent: -99999px;
+    border-radius: 100%;
+}
+
+.slick-dots li.slick-active button {
+    transform: scale(2.5);
+    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.205);
+}
+
+.right-0 {
+    right: 0;
+}
+
+.img-fluid {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+.slider-btn {
+    position: top;
+}
+
+.position-top {
+    position: absolute;
+    top: 45%;
+}
+
+
+
+
+
+
+
+
+
+
+
+// "start": "node server.js"

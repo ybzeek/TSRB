@@ -1,0 +1,240 @@
+@import 'nav.css';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin-top: 100px;
+}
+/* merch head */
+
+/* end of merch head */
+
+/* merch cards */
+
+.products-card-wrap-external {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.products-card-wrap-external li {
+    flex: 0 1 20rem;
+    margin: 1rem;
+    margin-bottom: 0;
+    border-top: 0.2rem #e0e0e0 solid;
+}
+
+.cardwrapext2 {
+    display: flex;
+}
+
+.card {
+    position: relative;
+    width: 320px;
+    height: 420px;
+    background: #122936;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #2196f3;
+    transform: skewY(345deg);
+    transition: 0.5s;
+}
+
+.card:hover::before {
+    top: -70%;
+    transform: skewY(390deg);
+}
+
+.card::after {
+    content: 'some text';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 8em;
+    color: rgba(0, 0, 0, 0.1);
+}
+
+.card .imgbx {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+}
+
+.card .imgbx img {
+    width: 300px;
+    max-width: 100%;
+    transition: 0.5s;
+}
+
+.card:hover .imgbx img {
+    max-width: 50%;
+}
+
+.card .contentbx {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.card .contentbx .productName {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card .contentbx .price {
+    font-size: 24px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.card .contentbx .buy {
+    position: relative;
+    top: 200px;
+    opacity: 0;
+    padding: 10px 30px;
+    margin-top: 15px;
+    color: white;
+    text-decoration: none;
+    background: #2196f3;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.card:hover .contentbx .buy {
+    top: 0;
+    opacity: 1;
+}
+
+
+/* end of merch cards */
+
+
+
+/* ICONS AT FOOTER */
+
+.icon_wrapper {
+    margin-top: 10px;
+}
+
+.icon_wrapper a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* this is the spotify icon */
+
+#spotify_icon {
+    transition: all 0.3s ease-in-out;
+}
+
+#spotify_icon_fill {
+    transform: scale(0.937);
+    font-size: 2em;
+    color: seashell;
+    background-color: none;
+    transition: all 0.3s ease-in-out;
+}
+
+#spotify_icon_body {
+    font-size: 1.95em;
+    color: #1DB954;
+    background-color: none;
+}
+
+#spotify_icon:hover {
+    transform: scale(1.2);
+}
+
+#spotify_icon:hover #spotify_icon_fill {
+    text-shadow: 0px 5px 3px rgba(0, 0, 0, .25);
+}
+
+/* end of spotify icon */
+
+/* this is the twitter icon */
+
+#twitter_icon {
+    transition: all 0.3s ease-in-out;
+}
+
+#twitter_icon_square {
+    border-radius: 10px;
+    font-size: 2em;
+    color: #1DA1F2;
+    background-color: none;
+    transition: all 0.3s ease-in-out;
+}
+
+#twitter_icon_bird {
+    font-size: 1.25em;
+    color: seashell;
+    background-color: none;
+}
+
+#twitter_icon:hover {
+    transform: scale(1.2);
+}
+
+#twitter_icon:hover #twitter_icon_square {
+    text-shadow: 0px 5px 3px rgba(0, 0, 0, .25);
+}
+
+/* end of twitter icon */
+
+/* this is the facebook icon */
+
+#facebook_icon {
+    transition: all 0.3s ease-in-out;
+}
+
+#facebook_icon_square {
+    border-radius: 10px;
+    font-size: 2em;
+    color: #4267B2;
+    background-color: none;
+    transition: all 0.3s ease-in-out;
+}
+
+#facebook_icon_f {
+    font-size: 1.6em;
+    color: seashell;
+    background-color: none;
+}
+
+#facebook_icon:hover {
+    transform: scale(1.2);
+}
+
+#facebook_icon:hover #facebook_icon_square {
+    text-shadow: 0px 3px 3px rgba(0,0,0,.25);
+}
+
+/* end of facebook icon */

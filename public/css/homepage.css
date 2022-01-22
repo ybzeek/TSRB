@@ -1,0 +1,737 @@
+@import 'nav.css';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* paralax */
+
+.parallax_content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    height: 100vh;
+    -webkit-justify-content: center;
+    -ms-flex-pack: distribute;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+.parallax_content section {
+    margin-top: 95px;
+    width: 100%;
+    height: 100vh;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-color: none;
+}
+
+.parallax_content section:nth-child(1) .image {
+    background-image: linear-gradient(315deg, rgba(72, 84, 97, 0.52), rgba(40, 49, 59, 0.73)), url("../Images/background_piano_crop_aspect_bufferontop.png");
+}
+
+.parallax_content section .image {
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 500;
+    opacity: 1;
+}
+
+.parallax_content section .stuff {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    height: 99vh;
+    width: 100%;
+    max-width: 70%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 1000;
+    color:  #0E67B4;
+    margin: 0 auto;
+    font-family:  'Josefin Sans', sans-serif;
+    position: relative;
+    margin-top: 20vh;
+}
+
+.parallax_content section .stuff h1 {
+    font-size: 5em;
+}
+
+.parallax_content section .stuff p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Icons */
+
+.parallax_content section .stuff .icon_wrapper {
+    margin-top: 10px;
+}
+
+.parallax_content section .stuff .icon_wrapper a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* this is the spotify icon */
+
+#spotify_icon {
+    transition: all 0.3s ease-in-out;
+}
+
+#spotify_icon_fill {
+    transform: scale(0.937);
+    font-size: 2em;
+    color: seashell;
+    background-color: none;
+    transition: all 0.3s ease-in-out;
+}
+
+#spotify_icon_body {
+    font-size: 1.95em;
+    color: #1DB954;
+    background-color: none;
+}
+
+#spotify_icon:hover {
+    transform: scale(1.2);
+}
+
+#spotify_icon:hover #spotify_icon_fill {
+    text-shadow: 0px 5px 3px rgba(0, 0, 0, .25);
+}
+
+/* end of spotify icon */
+
+/* this is the twitter icon */
+
+#twitter_icon {
+    transition: all 0.3s ease-in-out;
+}
+
+#twitter_icon_square {
+    border-radius: 10px;
+    font-size: 2em;
+    color: #1DA1F2;
+    background-color: none;
+    transition: all 0.3s ease-in-out;
+}
+
+#twitter_icon_bird {
+    font-size: 1.25em;
+    color: seashell;
+    background-color: none;
+}
+
+#twitter_icon:hover {
+    transform: scale(1.2);
+}
+
+#twitter_icon:hover #twitter_icon_square {
+    text-shadow: 0px 5px 3px rgba(0, 0, 0, .25);
+}
+
+/* end of twitter icon */
+
+/* this is the facebook icon */
+
+#facebook_icon {
+    transition: all 0.3s ease-in-out;
+}
+
+#facebook_icon_square {
+    border-radius: 10px;
+    font-size: 2em;
+    color: #4267B2;
+    background-color: none;
+    transition: all 0.3s ease-in-out;
+}
+
+#facebook_icon_f {
+    font-size: 1.6em;
+    color: seashell;
+    background-color: none;
+}
+
+#facebook_icon:hover {
+    transform: scale(1.2);
+}
+
+#facebook_icon:hover #facebook_icon_square {
+    text-shadow: 0px 3px 3px rgba(0,0,0,.25);
+}
+
+/* end of facebook icon */
+
+
+.parallax_content section .stuff:before, .parallax_content section .stuff:after {
+    width: 100%;
+    height: 1px;
+    display: block;
+    background-color: #d35400;
+    content: "";
+    margin: 30px 0;
+}
+
+.pc2 {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    width: 100%;
+    height: 80vh;
+}
+
+.parallax_content:nth-child(3) {
+    background-color: #041F36;
+}
+
+.parallax_content:nth-child(4) {
+    height: 400px;
+    background-image: linear-gradient(315deg, rgba(72, 84, 97, 0.52), rgba(40, 49, 59, 0.73)), url("../Images/sim_show.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: 94.33px;
+}
+
+.parallax_content:nth-child(5) {
+    background-color: #9ED2FF;
+}
+
+/* end of parallax  */
+
+/* text wrapper for text overlays */
+
+.text_wrapper {
+    position: relative;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* end of wrapper for text overlays */
+
+/* overlay for landing panel 2 */
+
+.text_overlay_2 {
+    font-size: 2em;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.text_overlay_2 a {
+    text-decoration: none;
+}
+
+.text_overlay_2 img {
+    width: 25%;
+    margin-bottom: -5px;
+}
+
+/* youtube video player panel 2 */
+
+iframe {
+    aspect-ratio: 16/9;
+    width: 50%;
+    max-width: 1024px;
+}
+
+/* end of youtube video player panel 2 */
+
+/* video selections for panel 2 */
+
+.other_videos {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin: 10px;
+    width: 60%;
+    max-width: 80%;
+}
+
+.other_videos li a img{
+    height: 50px;
+    width: 50px;
+    margin-top: 20px;
+}
+
+/* end of video selections for panel 2 */
+
+/* end of overlay for panel 2 */
+
+/* overlay for panel 3 */
+
+.text_overlay_3 {
+    font-size: 5em;
+    color: #A4ABBD;
+}
+
+/* end of overlay for panel 3 */
+
+/* overlay for panel 4 */
+
+.pc4 h1 {
+    font-size: 2.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: normal;
+    color: #444;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+/* end of overlay for panel 4 */
+
+/* cards on panel 4 */
+
+.card_wrapper {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 80rem;
+}
+
+.cols {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.col{
+    width: calc(25% - 2rem);
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.container{
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+      -webkit-perspective: 1000px;
+              perspective: 1000px;
+}
+
+.front,
+.back{
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
+    border-radius: 10px;
+	background-position: center;
+	-webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	-o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	-webkit-backface-visibility: hidden;
+	        backface-visibility: hidden;
+	text-align: center;
+	min-height: 280px;
+	height: auto;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+.back{
+  background: #cedce7;
+  background: -webkit-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+  background: -o-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+  background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+  text-decoration: none;
+}
+
+.back span a {
+    text-decoration: none;
+    color: white;
+}
+
+.front:after{
+	position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    opacity: .6;
+    background-color: #000;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    border-radius: 10px;
+}
+.container:hover .front,
+.container:hover .back{
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.inner{
+    -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+            transform: translateY(-50%) translateZ(60px) scale(0.94);
+    top: 50%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    outline: 1px solid transparent;
+    -webkit-perspective: inherit;
+            perspective: inherit;
+    z-index: 2;
+}
+
+.container .back{
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
+
+.container .front{
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
+
+.container:hover .back{
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.container:hover .front{
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.front .inner p{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.front .inner p:after{
+  content: '';
+  width: 6rem;
+  height: 2px;
+  position: absolute;
+  background: #d35400;
+  display: block;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -.75rem;
+}
+
+.front .inner span{
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 64rem){
+    /* .col{
+      width: calc(33.333333% - 2rem);
+    } */
+  }
+  
+  @media screen and (max-width: 48rem){
+    .col{
+      width: calc(50% - 2rem);
+    }
+  }
+  
+  @media screen and (max-width: 32rem){
+    .col{
+      width: 100%;
+      margin: 0 0 2rem 0;
+    }
+}
+
+/* end of cards on panel 4 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* adjustment for screen size */
+
+@media screen and (max-width: 1024px){
+
+    .parallax_content section .stuff {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        height: 99vh;
+        width: 50%;
+        max-width: 70%;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        text-align: center;
+        z-index: 1000;
+        color:  #0E67B4;
+        margin: 0 auto;
+        font-family:  'Josefin Sans', sans-serif;
+        position: relative;
+        margin-top: 50px;
+    }
+    
+    .parallax_content section .stuff:before, .parallax_content section .stuff:after {
+        width: 100%;
+        height: 1px;
+        display: block;
+        background-color: #d35400;
+        content: "";
+        margin: 15px 0;
+    }
+
+    .parallax_content section .stuff h1 {
+        font-size: 3.5em;
+    }
+    
+    .parallax_content section .stuff p {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        color: white;
+    }
+
+    /* text overlay / panel 2 changes */
+    
+    .text_overlay_2 {
+        font-size: 1.8em;
+        color: white;
+        font-family: 'Josefin Sans', sans-serif;
+        margin: 5px 0 5px 0;
+        text-align: center;
+    }
+    
+    .text_overlay_2 a {
+        text-decoration: none;
+    }
+    
+    .text_overlay_2 img {
+        width: 20%;
+        margin-bottom: -5px;
+    }
+
+    .other_videos {
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        margin: 5px;
+        width: 55%;
+        max-width: 80%;
+    }
+    
+    .other_videos li a img{
+        height: 50px;
+        width: 50px;
+        margin-top: 10px;
+    }
+
+    .parallax_content:nth-child(4) {
+        height: 60vh;
+        background-image: url("../Images/sim_show.jpeg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position-y: 94.33px;
+    }
+
+    .card_wrapper {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 80rem;
+    }
+    
+    .pc4 h1 {
+        font-size: 2rem;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: normal;
+        color: #444;
+        text-align: center;
+        margin: 1rem 0;
+    }
+}
+
+/* adjustment for mobile size */
+
+@media screen and (max-width: 768px) {
+
+    .parallax_content section .stuff {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        height: 99vh;
+        width: 100%;
+        max-width: 70%;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        text-align: center;
+        z-index: 1000;
+        color:  #0E67B4;
+        margin: 0 auto;
+        font-family:  'Josefin Sans', sans-serif;
+        position: relative;
+        margin-top: 50px;
+    }
+    
+    .parallax_content section .stuff:before, .parallax_content section .stuff:after {
+        width: 100%;
+        height: 1px;
+        display: block;
+        background-color: #d35400;
+        content: "";
+        margin: 15px 0;
+    }
+
+    .parallax_content section .stuff h1 {
+        font-size: 3em;
+    }
+    
+    .parallax_content section .stuff p {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        color: white;
+    }
+
+}
+
+/* mobile size */
+
+@media screen and (max-width: 450px) {
+    
+    .parallax_content:nth-child(2) {
+        height: 80vh;
+        background-image: linear-gradient(315deg, rgba(72, 84, 97, 0.52), rgba(40, 49, 59, 0.73)), url("../Images/background_piano_mobile.jpg");
+        background-size: cover;
+        margin-top: 95px;
+        background-position: center 95px;
+        background-attachment: fixed;
+    }
+
+    .parallax_content:nth-child(4) {
+        height: 60vh;
+        background-image: linear-gradient(315deg, rgba(72, 84, 97, 0.52), rgba(40, 49, 59, 0.73)), url("../Images/singer_mobile.png");
+        background-size: 100%;
+        background-attachment: fixed;
+        background-position-y: 94.33px;
+        background-position-x: -112.5px;
+    }
+
+    .text_overlay_1 {
+        font-size: 2em;
+        margin-top: 5em;
+        color: #A4ABBD;
+        background: none;
+    }
+
+    .text_overlay_1 p {
+        font-size: .5em;
+    }
+
+    .text_overlay_3 {
+        font-size: 2em;
+        color: #A4ABBD;
+    }
+
+}
+

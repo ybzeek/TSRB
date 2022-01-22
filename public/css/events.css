@@ -1,0 +1,277 @@
+@import 'nav.css';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin-top: 94.33px;
+}
+
+/* events header */
+
+.events_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 42vh;
+    background-image: url("../Images/srb_stage.jpeg");
+    background-size: cover;
+    background-position-y: -250px;
+    width: 100%;
+}
+
+.events_header h2 {
+    margin-top: -50px;
+    font-size: 4em;
+    color: white;
+}
+
+.events_header h3 {
+    font-size: 2em;
+    color: white;
+}
+
+/* event wrapper and events */
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+/* left side of events page */
+
+section .left_box {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 50px;
+}
+
+section .left_box .content {
+    color: white;
+    background: #404756;
+    padding: 40px;
+    transition: .5s;
+}
+
+section .left_box .content:hover {
+    background: #4CE0D2;
+}
+
+section .left_box .content h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+section .left_box .content p {
+    margin: 10px 0 0;
+}
+
+/* right side of events page */
+
+section .events {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: rgba(64, 71, 86, .5);
+    float: right;
+}
+
+section .events ul {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 40px;
+}
+
+section .events ul li {
+    list-style: none;
+    background: white;
+    height: 90px;
+    margin: 15px 0;
+}
+
+section .events ul li .time {
+    position: relative;
+    padding: 20px;
+    background: #404756;
+    width: 30%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    transition: .5s;
+}
+
+section .events ul li:hover .time {
+    background: #4CE0D2;
+}
+
+section .events ul li .time h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 45px;
+    line-height: 30px;
+}
+
+section .events ul li .time h2 span {
+    font-size: 30px;
+}
+
+section .events ul li .details {
+    padding: 5px;
+    background: white;
+    box-sizing: border-box;
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+
+section .events ul li .details h3 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+section .events ul li .details p {
+    position: relative;
+    margin: 1px 0 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+section .events ul li .details a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 7.5px;
+    border: 1px solid #262626;
+    margin-top: 1px;
+    font-size: 12px;
+    transition: .5s;
+    float: right;
+    background-color: #262626;
+    color: white;
+}
+
+section .events ul li .details a:hover {
+    background: #e91e63;
+    color: white;
+    border-color: #e91e63;
+}
+
+@media screen and (max-width: 1024px){
+    body {
+        margin-top: 94.33px;
+    }
+    
+    section {
+        height: 100%;
+    }
+
+    section .left_box {
+        width: 100%;
+        height: auto;
+        float: none;
+        padding: 20px;
+    }
+
+    section .events {
+        height: auto;
+        width: 100%;
+        background: transparent;
+        float: none;
+    }
+
+    section .left_box .content {
+        padding: 20px;
+    }
+
+    section .left_box .content h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    section .left_box .content p {
+        text-align: center;
+    }
+
+    section .events ul {
+        position: relative;
+        transform: translateY(0px);
+        padding: 0 20px 20px;
+    }
+
+    section .events ul li {
+        height: auto;
+        background: rgba(255, 255, 255, .9);
+    }
+
+    section .events ul li .time{
+        width: 80px;
+        height: 80px;
+        padding: 0;
+    }
+
+    section .events ul li .time h2 {
+        font-size: 30px;
+        line-height: 24px;
+    }
+
+    section .events ul li .time h2 span {
+        font-size: 20px;
+    }
+
+    section .events ul li .details {
+        width: 100%;
+        float: none;
+        padding-left: 100px;
+        background: transparent;
+    }
+
+    section .events ul li .details a {
+        padding: 5px 10px;
+        float: none;
+    }
+
+}
+
+/* adjustment for landscape mobile */
+
+@media screen and (max-width: 768px) {
+    body {
+        margin-top: 94.33px;
+    }
+    
+    section .left_box {
+        width: 100%;
+    }
+
+    section {
+        height: 100%;
+    }
+}
+
+/* mobile size */
+
+@media screen and (max-width: 450px) {
+    body {
+        margin-top: 94.33px;
+    }
+    
+    section {
+        height: 100%;
+        background-position: center;
+    }
+
+    section .left_box {
+        width: 100%;
+    }
+}
